@@ -14,6 +14,16 @@
         <div class="card-header text-center">Chatbot</div>
         <div class="card-body px-5">
             <h5 class="card-title">Chat with me!</h5>
+            <div class="mt-5">
+              <p class="card-text">
+                <h6 class="card-subtitle mb-2 text-muted">You:&nbsp;</h6> 
+                {{ user_input }}
+              </p>
+              <p class="card-text">
+                <h6 class="card-subtitle mb-2 text-muted">Chatbot:&nbsp;</h6>
+                {{ bot_response }}
+              </p>
+            </div>
             <form method="post" action="{{ url_for("chatbot") }}">
               <div class="form-floating my-4">
                 <input type="text" id="message" class="form-control" name="message" required placeholder="Do you like beer?" />
