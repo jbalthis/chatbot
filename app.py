@@ -55,4 +55,4 @@ def chatbot():
 # start the flask app
 if __name__ == "__main__":
     #app.run(debug=True)
-    app.run()
+    app.run(port=55000)
